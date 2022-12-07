@@ -9,7 +9,7 @@ import HeroCarousel from "./HeroCarousel";
 import Navbar from "./Navbar";
 import NavbarLeftItems from "./NavbarLeftItems";
 import NavbarRightItems from "./NavbarRightItems";
-import services from "../data/services";
+import {services} from "../data/constants/index";
 import ServicesCard from "./ServicesCard";
 import SharpoetryLogo from "./SharpoetryLogo"
 import Socials from "./Socials";

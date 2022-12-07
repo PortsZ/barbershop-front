@@ -1,6 +1,6 @@
 import React from 'react'
 import ServicesCard from './ServicesCard'
-import services from "../data/services";
+import { services } from "../data/constants/index";
 
 const Services = () => {
 
