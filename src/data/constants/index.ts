@@ -1,22 +1,22 @@
-const barbershopInfo = { 
+export const barbershopInfo = { 
    name: "BARBERSHOP NAME", 
    city: 'CITY',
-   xp: '20',
-   representing: 'an authentic American',
-   address: '[ number ] Street, City, State ZIP ( Reference )',
+   xp: 'I always try to show customers my love for Puerto Rico, my roots are part of my history, and working in Orlando, I can show other people where I came from and where I learned to do what I love! Always with God first of all and giving the best for our customers,',
+   representing: `Bringing the latin way of cutting hair in the best way straight from Puerto Rico. This is what makes William's Barbershop a different and a special place.`,
+   address: '4512 South Orange Blossom Trail, Orlando, State 32839',
    
-}
+};
 
-export const hero = `Top Class Mens Haircuts, With the Style you desire by a 
-consultation that fits your lifestyle.`
+export const hero = `Bringing the latin way of cutting hair in the best way straight from Puerto Rico.`
 
-export const logo =  [
-    {id: 'nav', content: barbershopInfo.name},
-    {id: 'establishment', content: 'The Establishment'},
-    {id: 'gallery', content: 'GALLERY'},
-    {id: 'services', content: 'SERVICES'},
-    {id: 'about', content: 'ABOUT'},
-]
+export const logo =  
+    {
+    nav: 'BARBERSHOP',
+    establishment: 'The Establishment',
+    gallery: 'GALLERY',
+    services: 'SERVICES',
+    about: 'ABOUT'
+  };
 
 export const services =  [
     {
@@ -50,7 +50,12 @@ export const services =  [
    
   ]; 
 
-  export const theEstablishment = `The ${barbershopInfo.name} is a place decorated in my own way, always with good music and representing ${barbershopInfo.representing} barbershop in the best way, all of which combined makes ${barbershopInfo.name} a different place. Besides a great haircut, at ${barbershopInfo.name} you can enjoy a place where men can go to be my friend, I really love the relationship I have with clients and I want them to feel comfortable here. So come get a haircut at ${barbershopInfo.name}, relax and a cold one on me.`
+export const theEstablishment = 
+  `The ${barbershopInfo.name} is a place decorated in my own way and always with good music, ${barbershopInfo.representing}. Besides a great haircut, at ${barbershopInfo.name} you can enjoy a place where men can go to be my friend, I want them to feel comfortable here. So come get a haircut and a cold one at ${barbershopInfo.name}!`;
+
+
+export const workingHours = [{start: 'Monday', end: 'saturday', from: '9:30', to:'7:00', exception: 'Sunday', excFrom: 'closed', excTo:''}];
+
 
   export const images = [
     {
@@ -77,14 +82,11 @@ export const services =  [
       isLast:true, 
       isFirst: false
     },
-  ]
-
-
-
+  ];
 
   export const about = [
     {
 
-        description: `${barbershopInfo.name} is your Personal Barbershop, where you get TOP CLASS Mens or Womans Haircuts, With the Style you desire by a consultation that fits your lifestyle, from the Barber that loves what he does and takes pride in his work, over ${barbershopInfo.xp} years of experience. bringing the art of hair design to ${barbershopInfo.city}! I always pass on my passion for the art of hair design to my clients. Always delivering a great result so they feel better when they walk out my door.`
+        description: `${barbershopInfo.name} is your Personal Barbershop. We are specialized in all types of men's haircuts and we do our best to please our customers. With the Style you desire by a consultation that fits your lifestyle, ${barbershopInfo.xp} delivering a great result so they feel better when they walk out my door.`
     }
-]
+];

@@ -2,7 +2,7 @@ import React from "react";
 import BarberPole from "./BarberPole";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import SharpoetryLogo from "./SharpoetryLogo";
+import SharpoetryLogo from "./Logo";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);

@@ -1,6 +1,6 @@
 import React from "react";
 import GalleryCarousel from "./GalleryCarousel";
-import SharpoetryLogo from "./SharpoetryLogo";
+import SharpoetryLogo from "./Logo";
 
 
 const Gallery = () => {

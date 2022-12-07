@@ -1,11 +1,11 @@
 import React from "react";
-import SocialMediaIcons from "./SocialMediaIcons";
 import Image from "next/image";
-import sharpoetryLogo from "../assets/sharpoetryLogo.svg";
+import SvgLogo from "../assets/SvgLogo.svg";
 import HeroCarousel from "./HeroCarousel";
 import { FaInstagram, FaFacebook } from "react-icons/fa";
 import BookNow from "./BookNow";
 import { motion } from "framer-motion";
+import {hero} from "../data/constants"
 
 const Hero = () => {
   return (
@@ -23,11 +23,10 @@ const Hero = () => {
 
         <div className="font-josefin flex flex-col md:px-0 px-4 items-center md:items-start font-semibold text-3xl md:w-1/3">
           <div className="p-10 w-full flex items-center justify-center">
-            <Image src={sharpoetryLogo} alt="a" width={150} />
+            <Image src={SvgLogo} alt="a" width={150} />
           </div>
           <h1 className="md:text-left text-center">
-            Top Class Mens Haircuts, With the Style you desire by a consultation
-            that fits your lifestyle.
+            {hero}
           </h1>
           <div className="md:w-12 w-1/2 h-1 bg-primary rounded mt-2 mb-1"></div>
           <div className="md:w-12 w-1/2 h-1 bg-secondary rounded mb-4"></div>

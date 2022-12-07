@@ -1,13 +1,5 @@
 import React from "react";
-
-const days = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+import { theEstablishment } from "../data/constants";
 
 const Socials = () => {
   return (
@@ -18,20 +10,7 @@ const Socials = () => {
       >
         <div className="w-full md:w-3/5 sm:px-10 text-left">
           <p className="font-josefin xxl:text-6xl xl:text-4x md:text-3xl text-xl text-white">
-            The{" "}
-            <span className="text-primary font-semibold">BARBERSHOP NAME</span>{" "}
-            is a place decorated in my own way, always with good music and
-            representing an authentic American barbershop in the best way, all
-            of which combined makes&nbsp;
-            <span className="text-primary font-semibold">BARBERSHOP NAME</span>{" "}
-            a different place. Besides a great haircut, at&nbsp;
-            <span className="text-primary font-semibold">BARBERSHOP NAME</span>{" "}
-            you can enjoy a place where men can go to be my friend, I really
-            love the relationship I have with clients and I want them to feel
-            comfortable here. So come get a haircut at&nbsp;
-            <span className="text-primary font-semibold">
-              BARBERSHOP NAME
-            </span>, relax and a cold one on me.
+            {theEstablishment}
           </p>
         </div>
         <div className="md:w-2/5 w-full border-solid border-8 border-secondary rounded-tl-3xl rounded-br-3xl">

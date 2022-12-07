@@ -9,9 +9,8 @@ import HeroCarousel from "./HeroCarousel";
 import Navbar from "./Navbar";
 import NavbarLeftItems from "./NavbarLeftItems";
 import NavbarRightItems from "./NavbarRightItems";
-import {services} from "../data/constants/index";
 import ServicesCard from "./ServicesCard";
-import SharpoetryLogo from "./SharpoetryLogo"
+import Logo from "./Logo"
 import Socials from "./Socials";
 import SocialMediaIcons from "./SocialMediaIcons";
 import Services from "./Services";
@@ -31,10 +30,9 @@ export {
     Navbar,
     NavbarLeftItems,
     NavbarRightItems,
-    services,
     Services,
     ServicesCard,
-    SharpoetryLogo,
+    Logo,
     Socials,
     SocialMediaIcons,
 

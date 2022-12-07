@@ -1,15 +1,17 @@
 import type { NextPage } from "next";
-import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Head from "next/head";
-import Image from "next/image";
+import {
+  barbershopInfo,
+  logo,
+} from "../src/data/constants"
 import {
   Hero,
   Navbar,
   Services,
   About,
   Footer,
-  SharpoetryLogo,
+  Logo,
   Gallery,
   Socials,
   BookNow,
@@ -19,7 +21,7 @@ const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-start bg-gradient-dark py-8">
       <Head>
-        <title>BarberShop</title>
+        <title>{barbershopInfo.name}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -40,7 +42,7 @@ const Home: NextPage = () => {
       {/* Socials========================================================================================*/}
       <div id="TheEstablishment" className="py-4 mt-10 z-10 flex flex-col px-10 items-center bg-background bg-opacity-80 backdrop-blur-md w-11/12 rounded-br-[45px] ">
         <h1 className="lg:text-8xl sm:text-6xl text-4xl text-center font-zilla font-bold py-6">
-          <SharpoetryLogo name="The Establishment" />
+          <Logo name={logo.establishment} />
         </h1>
 
         <Socials />
@@ -66,7 +68,7 @@ const Home: NextPage = () => {
         className="mt-10 py-4 flex flex-col justify-center items-center bg-background bg-opacity-80 text-black backdrop-blur-md w-11/12 "
       >
         <h1 className="lg:text-8xl sm:text-6xl text-4xl  font-zilla font-bold py-6">
-          <SharpoetryLogo name="SERVICES" />
+          <Logo name="SERVICES" />
         </h1>
         <Services />
       </div>
@@ -79,7 +81,7 @@ const Home: NextPage = () => {
         className="mt-10 py-4 flex flex-col justify-center items-center bg-background bg-opacity-80 text-black backdrop-blur-md w-11/12 "
       >
         <h1 className="lg:text-8xl sm:text-6xl text-4xl font-zilla font-bold py-6">
-          <SharpoetryLogo name="ABOUT" />
+          <Logo name="ABOUT" />
         </h1>
         <About />
         <div className=" flex justify-center items-center p-10 md:text-7xl text-3xl">

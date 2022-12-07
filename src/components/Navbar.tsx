@@ -4,7 +4,8 @@ import BarberPole from "./BarberPole";
 import NavbarLeftItems from "./NavbarLeftItems";
 import NavbarRightItems from "./NavbarRightItems";
 import { useState } from "react";5
-import SharpoetryLogo from "./SharpoetryLogo";
+import Logo from "./Logo";
+import {logo} from "../data/constants"
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -29,7 +30,7 @@ const Navbar = () => {
         bg-background bg-opacity-30  p-4 rounded-b-3xl rounded-tl-3xl 
           md:text-3xl xl:text-5xl text-2xl"
         >
-          <SharpoetryLogo name='LOGO'/>
+          <Logo name={logo.nav}/>
         </div>
 
         {/** MOBILE HAMBURGER */}

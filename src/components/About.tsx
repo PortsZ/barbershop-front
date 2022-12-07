@@ -1,7 +1,7 @@
 import React from "react";
 import Map from "./Map";
 import { GrStar } from "react-icons/gr";
-import SharpoetryLogo from "./SharpoetryLogo";
+import SharpoetryLogo from "./Logo";
 import BookNow from "./BookNow";
 
 const About = () => {
