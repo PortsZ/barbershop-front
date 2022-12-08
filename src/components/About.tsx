@@ -1,8 +1,8 @@
 import React from "react";
 import Map from "./Map";
 import { GrStar } from "react-icons/gr";
-import SharpoetryLogo from "./Logo";
-import BookNow from "./BookNow";
+import Logo from "./Logo";
+import { about } from "../data/constants"; 
 
 const About = () => {
   return (
@@ -26,19 +26,15 @@ const About = () => {
 
           <div>
             <p className="text-white font-josefin xl:text-3xl sm:text-2xl  text-md  ">
-              This is your Personal Barbershop, where you get top class
-              Mens or Womans Haircuts, With the Style you desire by a
-              consultation that fits your lifestyle, from the Barber that loves
-              what he does and takes pride in his work, over 20 years of
-              experience. bringing the art of hair design to your city! I always pass on my passion for the art of hair design to my clients. Always delivering a great result so they feel better when they walk out my door.
+            {about.description}
             </p>
           </div>
           <div className="w-1/4">
-            <SharpoetryLogo />
+            <Logo/>
           </div>
           <div className="w-full flex justify-center">
             <h1 className="  text-4xl font-zilla text-left text-primary mb-5">
-              [&nbsp;number&nbsp;] Street, City, State ZIP (&nbsp;Reference&nbsp;)
+              {about.address}
             </h1>
           </div>
         </div>

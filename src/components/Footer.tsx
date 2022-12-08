@@ -2,7 +2,8 @@ import React from "react";
 import BarberPole from "./BarberPole";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import SharpoetryLogo from "./Logo";
+import Logo from "./Logo";
+import { logo } from "../data/constants";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
             className=" md:w-auto flex items-center justify-center  
         bg-background bg-opacity-60  p-4 rounded-b-3xl rounded-tl-3xl md:text-5xl xl:text-8xl sm:text-2xl text-md"
           >
-            <SharpoetryLogo name="LOGO" />
+            <Logo name={logo.nav} />
           </div>
           <motion.div
             animate={{ rotate: [3, -3] }}

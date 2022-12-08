@@ -54,7 +54,7 @@ export const theEstablishment =
   `The ${barbershopInfo.name} is a place decorated in my own way and always with good music, ${barbershopInfo.representing}. Besides a great haircut, at ${barbershopInfo.name} you can enjoy a place where men can go to be my friend, I want them to feel comfortable here. So come get a haircut and a cold one at ${barbershopInfo.name}!`;
 
 
-export const workingHours = [{start: 'Monday', end: 'saturday', from: '9:30', to:'7:00', exception: 'Sunday', excFrom: 'closed', excTo:''}];
+export const workingHours = {start: `Monday`, end: 'saturday', from: '9:30', to:'7:00', exception: 'Sunday', excFrom: 'closed', excTo:''};
 
 
   export const images = [
@@ -84,9 +84,10 @@ export const workingHours = [{start: 'Monday', end: 'saturday', from: '9:30', to
     },
   ];
 
-  export const about = [
+  export const about = 
     {
 
-        description: `${barbershopInfo.name} is your Personal Barbershop. We are specialized in all types of men's haircuts and we do our best to please our customers. With the Style you desire by a consultation that fits your lifestyle, ${barbershopInfo.xp} delivering a great result so they feel better when they walk out my door.`
+        description: `${barbershopInfo.name} is your Personal Barbershop. We are specialized in all types of men's haircuts and we do our best to please our customers. With the Style you desire by a consultation that fits your lifestyle, ${barbershopInfo.xp} delivering a great result so they feel better when they walk out my door.`,
+        address: barbershopInfo.address,
     }
-];
+;

@@ -1,5 +1,5 @@
 import React from "react";
-import { theEstablishment } from "../data/constants";
+import { theEstablishment, workingHours } from "../data/constants";
 
 const Socials = () => {
   return (
@@ -25,18 +25,28 @@ const Socials = () => {
       <div className="py-10 flex flex-col md:flex-row justify-center items-start text-center gap-5">
         <div className="p-10 bg-primary rounded-bl-3xl text-black font-bold text-4xl font-zilla">
           <h1>
-            Monday <span className="font-josefin">&#10233;</span> Friday
+            {workingHours.start} <span className="font-josefin">&#10233;</span>{" "}
+            {workingHours.end}
           </h1>
           <p>
-            10<span className="text-white font-josefin">am to&nbsp;</span>8
+            {workingHours.from}
+            <span className="text-white font-josefin">am to&nbsp;</span>
+            {workingHours.to}
             <span className="text-white font-josefin">pm</span>
           </p>
         </div>
         <div className="p-10 bg-primary rounded-br-3xl text-black font-bold text-4xl font-zilla">
-          <h1>Saturday</h1>
+          <h1>{workingHours.exception}</h1>
           <p>
-            10<span className="text-white font-josefin">am to&nbsp;</span>4
+            {workingHours.excFrom}
+            {
+            workingHours.excTo != '' ? 
+            <div>
+              <span className="text-white font-josefin">am to&nbsp;</span>
+            {workingHours.excTo}
             <span className="text-white font-josefin">pm</span>
+            </div> : ''
+            }
           </p>
         </div>
       </div>
