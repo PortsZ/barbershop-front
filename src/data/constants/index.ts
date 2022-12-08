@@ -1,13 +1,14 @@
 export const barbershopInfo = { 
    name: "BARBERSHOP NAME", 
    city: 'CITY',
-   xp: 'I always try to show customers my love for Puerto Rico, my roots are part of my history, and working in Orlando, I can show other people where I came from and where I learned to do what I love! Always with God first of all and giving the best for our customers,',
-   representing: `Bringing the latin way of cutting hair in the best way straight from Puerto Rico. This is what makes William's Barbershop a different and a special place.`,
-   address: '4512 South Orange Blossom Trail, Orlando, State 32839',
+   xp: '',//I always try to show customers my love for Puerto Rico, my roots are part of my history, and working in Orlando, I can show other people where I came from and where I learned to do what I love! Always with God first of all and giving the best for our customers,
+   representing: ``, //Bringing the latin way of cutting hair in the best way straight from Puerto Rico. This is what makes William's Barbershop a different and a special place.
+   address: 'address', //4512 South Orange Blossom Trail, Orlando, State 32839
    
 };
 
-export const hero = `Bringing the latin way of cutting hair in the best way straight from Puerto Rico.`
+export const hero = 'lorem ipsum dolor sit amet ipsus cum dasos'
+// `Bringing the latin way of cutting hair in the best way straight from Puerto Rico.`
 
 export const logo =  
     {
