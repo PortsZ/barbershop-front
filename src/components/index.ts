@@ -15,6 +15,7 @@ import Socials from "./Socials";
 import SocialMediaIcons from "./SocialMediaIcons";
 import Services from "./Services";
 import Loader from "./Loader";
+import Example from "./Example";
 
 
 
@@ -22,6 +23,7 @@ export {
     About,
     BarberPole,
     BookNow,
+    Example,
     Footer,
     Gallery,
     Hero,

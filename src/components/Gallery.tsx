@@ -1,6 +1,7 @@
 import React from "react";
-import GalleryCarousel from "./GalleryCarousel";
+import Example from "./Example";
 import SharpoetryLogo from "./Logo";
+
 
 
 const Gallery = () => {
@@ -13,9 +14,9 @@ const Gallery = () => {
       <div className="w-full h-full mx-auto ">
         <div className="flex flex-col w-full ">
           <div className="md:w-full text-center md:py-8 py-10 w-full ">
-            <div className=" w-full mt-3 rounded-l-3xl flex items-center justify-center bg-gradient-dark md:py-10 min-h-[500px]
+            <div className="example-container
             ">
-              <GalleryCarousel />
+              <Example  />
             </div>
           </div>
         </div>
