@@ -2,12 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { wrap } from "popmotion";
-
-export const images = [
-    "https://d33wubrfki0l68.cloudfront.net/dd23708ebc4053551bb33e18b7174e73b6e1710b/dea24/static/images/wallpapers/shared-colors@2x.png",
-    "https://d33wubrfki0l68.cloudfront.net/49de349d12db851952c5556f3c637ca772745316/cfc56/static/images/wallpapers/bridge-02@2x.png",
-    "https://d33wubrfki0l68.cloudfront.net/594de66469079c21fc54c14db0591305a1198dd6/3f4b1/static/images/wallpapers/bridge-01@2x.png"
-  ];
+import { images } from "../data/constants";
 
 
   
@@ -33,11 +28,8 @@ const variants = {
   }
 };
 
-/**
- * Experimenting with distilling swipe offset and velocity into a single variable, so the
- * less distance a user has swiped, the more velocity they need to register as a swipe.
- * Should accomodate longer swipes and short flicks without having binary checks on
- * just distance thresholds and velocity > 0.
+/*
+ * Experimenting with distilling swipe offset and velocity into a single variable, so the less distance a user has swiped, the more velocity they need to register as a swipe. Should accomodate longer swipes and short flicks without having binary checks on just distance thresholds and velocity > 0.
  */
 const swipeConfidenceThreshold = 10000;
 const swipePower = (offset: number, velocity: number) => {
@@ -58,9 +50,15 @@ export const Example = () => {
   };
 
   return (
-    <>
+    <div className=" flex rounded-tl-[45px] overflow-hidden justify-between items-center py-10 p-4 md:px-10 md:top-none bottom-0">
+      <div className="prev " onClick={() => paginate(-1)}>
+        {"‣"}
+      </div>
       <AnimatePresence initial={false} custom={direction}>
+        <div className="relative cursor-grab flex items-center justify-center rounded-tl-[45px] overflow-clipped md:px-12 w-full h-full">
         <motion.img
+          className=" object-cover rounded-tl-[45px] rounded-br-[45px] max-w-full
+          max-h-full border-solid border-white border-2"
           key={page}
           src={images[imageIndex]}
           custom={direction}
@@ -85,18 +83,15 @@ export const Example = () => {
             }
           }}
         />
+        </div>
       </AnimatePresence>
 
 
-      {/* EU NA0O SEI IMPORTAR ESSA BOMBA DE STYLES */}
-
-      <div className="next" onClick={() => paginate(1)}>
+      <div className="next  md:block hidden" onClick={() => paginate(1)}>
         {"‣"}
       </div>
-      <div className="prev" onClick={() => paginate(-1)}>
-        {"‣"}
-      </div>
-    </>
+      
+    </div>
   );
 };
 

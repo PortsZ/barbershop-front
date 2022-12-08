@@ -58,30 +58,10 @@ export const workingHours = {start: `Monday`, end: 'saturday', from: '9:30', to:
 
 
   export const images = [
-    {
-      id:0,
-      url:'/images/gallery/gallery1.jpg', 
-      isLast:true, 
-      isFirst: false
-    },
-    {
-      id:1,
-      url:'/images/gallery/gallery1.jpg', 
-      isLast:true, 
-      isFirst: false
-    },
-    {
-      id:2,
-      url:'/images/gallery/gallery1.jpg', 
-      isLast:true, 
-      isFirst: false
-    },
-    {
-      id:3,
-      url:'/images/gallery/gallery1.jpg', 
-      isLast:true, 
-      isFirst: false
-    },
+    '/images/gallery/gallery1.jpg', 
+    '/images/gallery/gallery2.jpg',    
+    '/images/gallery/gallery3.jpg',      
+    '/images/gallery/gallery4.jpg', 
   ];
 
   export const about = 

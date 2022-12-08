@@ -40,7 +40,7 @@ const Home: NextPage = () => {
       {/* HERO SECTION==================================================================================== */}
 
       {/* Socials========================================================================================*/}
-      <div id="TheEstablishment" className="py-4 mt-10 z-10 flex flex-col px-10 items-center bg-background bg-opacity-80 backdrop-blur-md w-11/12 rounded-br-[45px] ">
+      <div id="TheEstablishment" className="py-4 mt-10 z-10 flex flex-col px-2 md:px-10 items-center bg-background bg-opacity-80 backdrop-blur-md w-11/12 rounded-br-[45px] ">
         <h1 className="lg:text-8xl sm:text-6xl text-4xl text-center font-zilla font-bold py-6">
           <Logo name={logo.establishment} />
         </h1>
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
         id="Gallery"
         className="mt-10 py-4 flex justify-center items-center bg-background bg-opacity-80 text-black backdrop-blur-md w-11/12 rounded-br-[45px] "
       >
-        <div className="flex justify-center items-center py-4 px-4 w-full">
+        <div className="flex justify-center items-center py-4 px-2 md:px-10 w-full">
           <Gallery />
         </div>
       </div>

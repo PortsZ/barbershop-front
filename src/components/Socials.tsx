@@ -22,7 +22,7 @@ const Socials = () => {
         </div>
       </div>
 
-      <div className="py-10 flex flex-col md:flex-row justify-center items-start text-center gap-5">
+      <div className="py-10 flex flex-col md:flex-row justify-center items-center md:items-start text-center gap-5">
         <div className="p-10 bg-primary rounded-bl-3xl text-black font-bold text-4xl font-zilla">
           <h1>
             {workingHours.start} <span className="font-josefin">&#10233;</span>{" "}
